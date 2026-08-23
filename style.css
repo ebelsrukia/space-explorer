@@ -1,0 +1,332 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0b1026;
+    color: white;
+    text-align: center;
+}
+
+header {
+    padding: 60px 20px;
+    background-color: #151b3d;
+}
+
+header h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 20px;
+}
+
+nav {
+    padding: 15px;
+    background-color: #080c1c;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #c9b6ff;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+}
+
+section {
+    margin: 40px 20px;
+    padding: 30px;
+    background-color: #151b3d;
+    border-radius: 15px;
+}
+
+section h2 {
+    color: #d8c8ff;
+}
+
+section a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #6c5ce7;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+section a:hover {
+    background-color: #8577ee;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #080c1c;
+}
+.hero {
+    padding: 0;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-text {
+    padding: 30px;
+}
+
+.hero-text h2 {
+    font-size: 32px;
+} 
+.hero {
+    position: relative;
+    border: 1px solid #2b3566;
+}
+
+.hero::before {
+    content: "✦";
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 28px;
+    color: #d8c8ff;
+}
+
+.hero::after {
+    content: "✧";
+    position: absolute;
+    top: 45px;
+    right: 25px;
+    font-size: 22px;
+    color: #d8c8ff;
+}
+
+.hero img {
+    filter: brightness(0.75);
+}
+
+.hero-text {
+    position: relative;
+}
+.planet-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.planet-card {
+    flex: 1;
+    min-width: 180px;
+    padding: 20px;
+    background-color: #0b1026;
+    border: 1px solid #2b3566;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.planet-card:hover {
+    transform: translateY(-8px);
+}
+
+.planet-card h3 {
+    color: #d8c8ff;
+}
+/* Planet Page */
+
+dl {
+    text-align: left;
+    max-width: 700px;
+    margin: auto;
+}
+
+dt {
+    font-size: 20px;
+    font-weight: bold;
+    color: #d8c8ff;
+    margin-top: 20px;
+}
+
+dd {
+    margin: 8px 0 15px 20px;
+    line-height: 1.6;
+}
+
+ul,
+ol {
+    text-align: left;
+    max-width: 500px;
+    margin: 20px auto;
+    line-height: 1.8;
+}
+
+li::marker {
+    color: #d8c8ff;
+}
+/* Planet Comparison Table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+th,
+td {
+    border: 1px solid #394477;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #252d5a;
+    color: #d8c8ff;
+}
+
+tr:nth-child(even) {
+    background-color: #101632;
+}
+
+tr:hover {
+    background-color: #202953;
+}
+/* Gallery */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.gallery-item {
+    background-color: #0b1026;
+    border: 1px solid #2b3566;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-item h3 {
+    color: #d8c8ff;
+    margin: 18px 10px 8px;
+}
+
+.gallery-item p {
+    padding: 0 15px 18px;
+    line-height: 1.5;
+}
+/* Survey Form */
+
+form {
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+label {
+    color: #d8c8ff;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    box-sizing: border-box;
+    border: 1px solid #394477;
+    border-radius: 8px;
+    background-color: #0b1026;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 20px;
+    background-color: #6c5ce7;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8577ee;
+    transform: translateY(-2px);
+}
+.space-message {
+    color: #d8c8ff;
+    font-style: italic;
+    margin-top: 25px;
+}
+/* Featured Planets */
+.planet-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.planet-card {
+    width: 280px;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.planet-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+
+.planet-card h3 {
+    margin: 12px 0 8px;
+}
+
+.planet-card p {
+    margin: 0;
+}
+.back-to-top {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.back-to-top a {
+    text-decoration: none;
+    font-weight: bold;
+}
